@@ -55,8 +55,8 @@ const Explore = () => {
 						Top Picks For You -<span className="text-primary"> Amsterdam </span>
 					</h2>
 					<div className="grid grid-cols-1 min-[400px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-3 mt-6">
-						{data.map((elem: any) => (
-							<Gridcard elem={elem} />
+						{data.map((elem: any, index) => (
+							<Gridcard elem={elem} key={index} />
 						))}
 					</div>
 					<h2 className="text-black text-2xl md:mt-6 m-auto">
@@ -64,8 +64,8 @@ const Explore = () => {
 						<span className="text-primary"> Ljubjana </span>
 					</h2>
 					<div className="grid grid-cols-1 min-[400px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-6">
-						{data.map((elem: any) => (
-							<Gridcard elem={elem} />
+						{data.map((elem: any, index) => (
+							<Gridcard elem={elem} key={index} />
 						))}
 					</div>
 					<h2 className="text-black text-2xl my-6">Explore Options</h2>
